@@ -1,0 +1,93 @@
+What is NPM? 
+-It is not node package manager,
+-Npm manages packages but doesn't stand for node package manager.
+-Npm manages all kind of packages, libraries, etc.
+
+Npm init >> Creates packages.json 
+
+Package.json file is configuration for our Npm 
+It keeps the track of what version is installed 
+
+
+The Most Important package is a bundler
+Bundler basically bundles our app.
+
+We will be using Parcel Bundler 
+npm install -D parcel
+
+There are 2 types od dependencies:
+1. DevDependencies - It is Required For development phase.
+So we will install parcel as devdependency, So we have used "-D"
+2. Normal Dependencies - Used in Production also.
+
+"devDependencies": {
+    "parcel": "^2.15.4"
+  }
+Here What does caret"^" means ?
+Suppose a new version of parcel is released the parcel will automatically updates its version 
+It will update minor updates like 2.15.6
+
+"^2.15.4" - here we can also use tilde "~"
+
+Tilde ~ automatically updates to major update like 3.0.0 
+
+Always use Caret so that only minor updates can be updated instead of major update bcoz If we install major update it can disrupt our app
+
+
+package-lock.json
+Locks exact version of package
+It keeps the track of all the Exact versions. 
+
+Node module ?
+node modules is a data base where all the packages are being stored.
+Nodde modules are like database of various packages
+
+Transitive Dependencies
+Parcel can itself have own dependencies and that dependencies may be have thier own dependencies.
+so when we have installed parcel so parcel says please install other packages also 
+
+
+---------------------------------------------------------------------------
+NOW LETS IDNITE OUR APP  | Lets see how parcel works
+
+npx parcel index.html
+Server running at http://localhost:1234
+✨ Built in 5.57s
+Parcel has created a server and
+Now parcel is hosting our app 
+npx means executing the package
+here index.html is executed
+
+Another way to get react via npm Not from CDN links
+We use NPM method bcoz It doesn't need to network call, instead we can directly use it from node modules
+
+## Why react is fast ?
+# Parcel
+- Dev Build
+- Local Server
+- HMR - Hot Module Replacement
+- Parcel uses File watching Algoritm which is written in C++
+- Catching - Faster builds 
+- Image Optimization
+- Minification of files
+- Bundling
+- Compress 
+- Consistent Hashing
+- Code Splitting
+- Differential Bundling - Support for Older Browsers
+- Diagnostic
+- Error Handling
+- HTTPs
+- Tree Shaking Algorithm - remove unused code.
+- Different dev & production bundles.
+
+
+Browserslist.dev 
+to know Which browsers versions  our app to be work on.
+ADD this in package.json
+
+"browserslist": [
+  "last 2 versions"
+]
+
+It means it will definitely work on this versions But may or maay not work on other versions of browsers 
