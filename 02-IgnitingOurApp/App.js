@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 const heading = React.createElement(
   "h1",
   { id: "heading", xyz: "abc" },
-  "Hello W  orld From React!"
+  "Hello World From React!"
 ); //{} object is used to give attributes to html tags like id or class, etc.
 
 console.log(heading); // This is object
