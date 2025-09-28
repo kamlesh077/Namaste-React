@@ -1,0 +1,61 @@
+{
+  // Snippets
+  "reactSnippets.settings.languageScopes": "typescript,typescriptreact,javascript,javascriptreact",
+
+  // JSON schema placeholder (keep empty or add your own schemas here)
+  "json.schemas": [],
+
+  // ---------- Auto Save ----------
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+
+  // ---------- Prettier (Formatter) ----------
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // ---------- Auto Import / IntelliSense ----------
+  // Enable quick suggestions (needed for auto imports to trigger)
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+
+  // ---------- Prettier Options (Optional) ----------
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "none",
+  "prettier.semi": true,
+
+  // ---------- Editor QoL ----------
+  "editor.fontLigatures": true,
+  "explorer.confirmDelete": false,
+  "editor.cursorBlinking": "expand",
+  "eslint.execArgv": null,
+  "debug.javascript.debugByLinkOptions": "on"
+}

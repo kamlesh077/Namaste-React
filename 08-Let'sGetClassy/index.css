@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 0 4rem;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 5rem;
+}
+
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* --------- */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 5px;
+}
+
+.res-card {
+    background-color: #d4ccccff;
+    margin: 10px;
+    padding: 5px;
+    width: 160px;
+    /* height: 420px; */
+    
+}
+.res-card:hover {
+    border: 1px solid black;
+    box-shadow: 0.5rem;
+    cursor: pointer;
+}
+
+.res-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.res-logo {
+    height: 250px;
+    width: 100%;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    margin:10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card {
+    margin: 10px;
+    padding: 5px;
+    width: 160px;
+    height: 400px;
+    background-color: rgb(235, 230, 230);
+}
+
+.login {
+    margin: 8px;
+    padding:0px 20px;
+    cursor: pointer;
+}
+
+.user-card {
+    padding: 10px;
+    border: 1px solid black;
+}
